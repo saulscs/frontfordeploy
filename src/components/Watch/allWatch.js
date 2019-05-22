@@ -12,7 +12,7 @@ export default class allWatch extends Component {
   }
   componentDidMount() {
     axios 
-    .get ('http://localhost:3000/products/?category=Apple_Watch')
+    .get ('https://powerful-bayou-56783.herokuapp.com/products/?category=Apple_Watch')
     .then (({data})=>{
       this.setState({fullWatchs:data})
     })

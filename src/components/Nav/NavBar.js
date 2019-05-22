@@ -14,7 +14,7 @@ export default class NavBar extends Component {
   }
   
   checkLogged = () => {
-    let loggedUrl = 'http://localhost:3000/auth/loggedin'
+    let loggedUrl = 'https://powerful-bayou-56783.herokuapp.com/auth/loggedin'
     axios
       .get(loggedUrl, { withCredentials: true })
       .then(res => {

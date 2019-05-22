@@ -10,7 +10,7 @@ export default class CardDetail extends Component {
   componentDidMount(){
     const {id} = this.props.match.params
     axios
-    .get(`http://localhost:3000/products/${id}`)
+    .get(`https://powerful-bayou-56783.herokuapp.com/products/${id}`)
     .then(({data}) => {
       this.setState({ data })
       console.log(data)

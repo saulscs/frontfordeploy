@@ -12,7 +12,7 @@ export default class allMacs extends Component {
   }
   componentDidMount() {
     axios 
-    .get ('http://localhost:3000/products/?category=Mac')
+    .get ('https://powerful-bayou-56783.herokuapp.com/products/?category=Mac')
     .then (({data})=>{
       this.setState({fullMacs:data})
     })

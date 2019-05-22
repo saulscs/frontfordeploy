@@ -12,7 +12,7 @@ export default class allAccesorios extends Component {
   }
   componentDidMount() {
     axios 
-    .get ('http://localhost:3000/products/?category=Accesorios')
+    .get ('https://powerful-bayou-56783.herokuapp.com/products/?category=Accesorios')
     .then (({data})=>{
       this.setState({fullAccesorios:data})
     })

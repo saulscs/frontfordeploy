@@ -32,7 +32,7 @@ handleChange = event =>{
 handleSubmitForm = event => {
   event.preventDefault()
   axios
-  .post('http://localhost:3000/products', this.state)
+  .post('https://powerful-bayou-56783.herokuapp.com/products', this.state)
   .then(res => {
     console.log(res)
     this.setState({ ...initialState })

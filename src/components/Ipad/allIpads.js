@@ -12,7 +12,7 @@ export default class allIpads extends Component {
   }
   componentDidMount() {
     axios 
-    .get ('http://localhost:3000/products/?category=Ipad')
+    .get ('https://powerful-bayou-56783.herokuapp.com/products/?category=Ipad')
     .then (({data})=>{
       this.setState({fullIpads:data})
     })

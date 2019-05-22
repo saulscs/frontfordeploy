@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseURL = 'http://localhost:3000/'
+const baseURL = 'https://powerful-bayou-56783.herokuapp.com/'
 
 class AuthService {
   constructor() {

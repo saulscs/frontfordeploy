@@ -12,7 +12,7 @@ export default class allIphones extends Component {
   }
   componentDidMount() {
     axios 
-    .get ('http://localhost:3000/products/?category=Iphone')
+    .get ('https://powerful-bayou-56783.herokuapp.com/products/?category=Iphone')
     .then (({data})=>{
       this.setState({fullIphones:data})
     })

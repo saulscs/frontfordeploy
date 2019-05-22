@@ -12,7 +12,7 @@ export default class allOtros extends Component {
   }
   componentDidMount() {
     axios 
-    .get ('http://localhost:3000/products/?category=Otros')
+    .get ('https://powerful-bayou-56783.herokuapp.com/products/?category=Otros')
     .then (({data})=>{
       this.setState({fullOtros:data})
     })
